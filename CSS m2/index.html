@@ -4,74 +4,97 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu portal de notícias</title>
+    <link rel="stylesheet" href="./main.css">
 </head>
 <body>
     <header>
-        <h1>Meu Portal de notícias</h1>
+        <div class="container1">
+            <h1>Meu Portal de notícias</h1>
         <nav>
             <ul>
                 <li><a href="">Esportes</a></li>
                 <li><a href="">Economia</a></li>
             </ul>
         </nav>
+        </div>
     </header>
-    <section>
-        <article>
+    <section id="sports">
+        <div class="container1">
             <h2>Esportes</h2>
-            <img src="./Arquivos/futebol.jpg" alt="Bola_no_campo">
-            <header>
-                <time>28/02/2024 ás 14:15</time>
-            </header>
-        </article>
-        <article>
-            <h3>Grande clássico na noite de hoje</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-            <a href="" title="Leia a notícia completa">Ler mais</a><br/>
-            <img src="./Arquivos/futebol-americano.jpg" alt="Jogador segurando a bola">
-            <header>
-                <time>28/02/2024 ás 14:20</time>
-            </header>
-        </article>
-        <article>
-            <h3>Noite do Superbowl</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut quos tenetur nobis iste voluptatum facere velit.</p>
-            <a href="" title="Leia a noticia completa">Ler mais</a><br/>
-            <img src="./Arquivos/basquete.jpg" alt="Jogo de basquete">
-            <header>
-                <time>28/02/2024 ás 14:23</time>
-                <h4>Notícia sobre a NBA</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe cumque minus temporibus amet mollitia explicabo nostrum velit ex nisi ea cupiditate deserunt.</p>
-                <a href="" title="Leia a noticia completa">Ler mais</a>
-            </header>
-        </article>
-        <article>
+            <div class="artigos">
+                <article>
+                    <img src="./Arquivos/futebol.jpg" alt="Bola_no_campo">
+                    <header>
+                        <time class="data-rodape">28/02/2024 ás 14:15</time>
+                        <h3>Grande clássico na noite de hoje</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                        <a href="" title="Leia a notícia completa">Ler mais</a><br/>
+                    </header>
+                </article>
+                <article>   
+                    <img src="./Arquivos/futebol-americano.jpg" alt="Jogador segurando a bola">
+                    <header>
+                        <time class="data-rodape">28/02/2024 ás 14:20</time>
+                        <h3>Noite do Superbowl</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut quos tenetur nobis iste voluptatum facere velit.</p>
+                        <a href="" title="Leia a noticia completa">Ler mais</a><br/>
+                    </header>
+                </article>
+                <article>     
+                    <img src="./Arquivos/basquete.jpg" alt="Jogo de basquete">
+                    <header>
+                        <time class="data-rodape">28/02/2024 ás 14:23</time>
+                        <h3>Notícia sobre a NBA</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe cumque minus temporibus amet mollitia explicabo nostrum velit ex nisi ea cupiditate deserunt.</p>
+                        <a href="" title="Leia a noticia completa">Ler mais</a>
+                    </header>
+                </article>
+                <article>   
+                    <img src="./Arquivos/futebol-americano.jpg" alt="Jogador segurando a bola">
+                    <header>
+                        <time class="data-rodape">28/02/2024 ás 14:20</time>
+                        <h3>Noite do Superbowl</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut quos tenetur nobis iste voluptatum facere velit.</p>
+                        <a href="" title="Leia a noticia completa">Ler mais</a><br/>
+                    </header>
+                </article>
+            </div>
+        </div>
+    </section>
+    <section id="economy">
+        <div class="container1">
             <h2>Economia</h2>
-            <img src="./Arquivos/dolares.jpg" alt="notas de dolares">
-            <header>
-                <time>28/02/2024 ás 14:28</time>
-                <h3>Dólar em alta de 0,50%</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam sit qui necessitatibus consequuntur at deleniti illo neque molestias.</p>
-                <a href="" title="Leia a noticia completa">Ler mais</a>
-            </header>
-        </article>
-        <article>
-            <img src="./Arquivos/euro.jpg" alt="notas de euro">
-            <header>
-                <time>28/02/2024 ás 14:30</time>
-                <h3>Euro em queda de 0,40%</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum odio nihil veniam aut. Accusantium, debitis consequuntur officia unde cupiditate minima. Fuga.</p>
-                <a href="" title="Leia a noticia completa">Ler mais</a>
-            </header>
-        </article>
-        <article>
-            <img src="./Arquivos/petroleo.jpg" alt="Petroleo">
-            <header>
-                <time>28/02/2024 ás 14:33</time>
-                <h2>Encontrada nova fonte de petróleo</h2>
-                <p>Estados Unidos acredita que país detentor de nova fonte de petróleo precisa de democracia</p>
-                <a href="" title="Leia a notícia completa">Ler mais</a>
-            </header>
-        </article>
+            <div class="artigos">
+                <article>
+                    <img src="./Arquivos/dolares.jpg" alt="notas de dolares">
+                    <header>
+                        <time class="data-rodape">28/02/2024 ás 14:28</time>
+                        <h3>Dólar em alta de 0,50%</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam sit qui necessitatibus consequuntur at deleniti illo neque molestias.</p>
+                        <a href="" title="Leia a noticia completa">Ler mais</a>
+                    </header>
+                </article>
+                <article>
+                    <img src="./Arquivos/euro.jpg" alt="notas de euro">
+                    <header>
+                        <time class="data-rodape">28/02/2024 ás 14:30</time>
+                        <h3>Euro em queda de 0,40%</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum odio nihil veniam aut. Accusantium, debitis consequuntur officia unde cupiditate minima. Fuga.</p>
+                        <a href="" title="Leia a noticia completa">Ler mais</a>
+                    </header>
+                </article>
+                <article>
+                    <img src="./Arquivos/petroleo.jpg" alt="Petroleo">
+                    <header>
+                        <time class="data-rodape">28/02/2024 ás 14:33</time>
+                        <h3>Encontrada nova fonte de petróleo</h3>
+                        <p>Estados Unidos acredita que país detentor de nova fonte de petróleo precisa de democracia</p>
+                        <a href="" title="Leia a notícia completa">Ler mais</a>
+                    </header>
+                </article>
+            </div>
+        </div>
+    </section>
 
     </section>
 </body>
