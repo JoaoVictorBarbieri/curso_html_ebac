@@ -15,7 +15,13 @@ header .container1 {
 }
 header li a {
     color: white;
-
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 100;
+    text-decoration: none;
+    margin-left: 16px;
+}
+header li a:hover {
+    text-decoration: underline;
 }
 body > header {
     background-color: cadetblue;
@@ -33,7 +39,8 @@ body > header {
 }
 
 .artigos article img {
-    height: 180px;
+    /* height: 180px; */
+    width: 100%;
 }
 
 .artigos article {
@@ -54,6 +61,34 @@ section h2, .artigos article {
     color: white;
     padding: 8px;
     display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 8px;
+}
+.artigos article a:hover {
+    text-decoration: underline;
+}
+.artigos article p, .artigos article a {
+    font-family: 'Times New Roman', Times, serif;
+}
+section h3 {
+    font-size: 24px;
+}
+section h2 {
+    font-size: 32px;
+}
+
+#sports {
+    background-color: rgba(0, 255, 0, 0.2);
+}
+#sports .artigos article a {
+    background-color: darkgreen;
+}
+#economy {
+    background-color: rgba(255, 0, 255, 0.2);
+}
+#economy .artigos article a {
+    background-color: darkmagenta;
 }
 /* h1 serve para colocar em todos os titulos
 # + id para um item especifico
