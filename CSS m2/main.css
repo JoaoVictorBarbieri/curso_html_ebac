@@ -97,7 +97,10 @@ section h2 {
     background-color: #640e0ee5;
 }
 #agro {
-    background-color: rgb(45, 155, 51);
+    background-color: #2d8f06;
+}
+#agro .artigos article a {
+    background-color: #1d5707;
 }
 footer {
     color: white;
@@ -105,7 +108,10 @@ footer {
     background-color: cadetblue;
     padding: 16px 0;
 }
-/* h1 serve para colocar em todos os titulos
+
+/*
+ h1 serve para colocar em todos os titulos
 # + id para um item especifico
 class para varios itens .class
-* é tudo oq n tiver ja com informação */
+* é tudo oq n tiver ja com informação 
+*/
