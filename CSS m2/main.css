@@ -79,16 +79,31 @@ section h2 {
 }
 
 #sports {
-    background-color: rgba(0, 255, 0, 0.2);
+    background-color: rgba(4, 107, 4, 0.589);
 }
 #sports .artigos article a {
     background-color: darkgreen;
 }
 #economy {
-    background-color: rgba(255, 0, 255, 0.2);
+    background-color: rgba(248, 252, 1, 0.5);
 }
 #economy .artigos article a {
     background-color: darkmagenta;
+}
+#entretenimento {
+    background-color: #b61a1ae5;
+}
+#entretenimento .artigos article a {
+    background-color: #640e0ee5;
+}
+#agro {
+    background-color: rgb(45, 155, 51);
+}
+footer {
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: cadetblue;
+    padding: 16px 0;
 }
 /* h1 serve para colocar em todos os titulos
 # + id para um item especifico
