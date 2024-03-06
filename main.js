@@ -14,14 +14,14 @@ form.addEventListener('submit', function(e) {
     const naofuncionando = document.querySelector('.invalido');
 
     if (valorum > valordois) {
-        funcionando.innerHTML = `Valor <b>${valorum}</b> é maior que <b>${valordois}</b>`;
+        funcionando.innerHTML = `Valor <b>${valorum}</b> é maior que <b>${valordois}</b>, o valor foi adicionado corretamente`;
         funcionando.style.display = 'block'
         naofuncionando.style.display = 'none';
 
         valor1.value = '';
         valor2.value = '';
     } else {
-        naofuncionando.innerHTML = 'Valor maior deve estar no campo <b>valor 1</b>';
+        naofuncionando.innerHTML = 'Inválido! Valor maior deve estar no campo <b>valor 1</b>';
         funcionando.style.display = 'none'
         naofuncionando.style.display = 'block'
 
