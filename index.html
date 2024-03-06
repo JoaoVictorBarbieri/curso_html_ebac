@@ -1,56 +1,23 @@
 <!DOCTYPE html>
-<html lang="pt_BR">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu arquivo de estudo EBAC</title>
+    <title>HTML com JS</title>
+    <link rel="stylesheet" href="./main.css" />
 </head>
 <body>
-    <h1>Meu primeiro arquivo html</h1>
-    <h2>minha tag h2</h2>
-    <h3>minha tag h3</h3>
-    <h4>minha tag h4</h4>
-    <h5>minha tag h5</h5>
-    <h6>minha tag h6</h6>
-    <p>A tag <b>hr/</b> serve para colocar uma linha no texto e a <b>br/</b> serve para a quebra de linha</p>
-    <hr/>
-    <p> <b>Negrito</b>
-        <br/><strong>Negrito e semantico importante</strong> 
-
-        <br/><i>Escrita em itálico</i>
-        <br/><em>Escrita em itálico e importancia semantica</em>
-
-        <br/><mark>Escrita com marca texto</mark>
-
-        <br/><del>Escrita com risca</del>
-
-        <br/><small>Texto em fonte menor</small>
-
-        <br/><span>Util para usar com CSS</span>
-
-        <br/>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima, molestias accusantium voluptate quibusdam officiis soluta asperiores perferendis amet omnis repellendus iure, facilis aliquam aspernatur corporis molestiae repellat, laudantium velit vitae?</p>
-
-    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" title="Clique e descubra!">Clique aqui para algo incrivel!</a>
-    <br/><a href="4002-8922">4740028922</a>
-    <br/><a href="mailto:joaov.b.euwest@gmail.com">Entre em contato através de email</a>
-
-    <hr/>
-    <blockquote>
-        Cria uma margem no texto
-    </blockquote>
-    <address>
-        Texto predefinido com semantica e em estilo italico
-    </address>
-    <hr/>
-    <a href="./containers.html">Ir para a página de containers</a>
-    <hr/>
-    <a href="./listas.html">Ir para a página de listas</a>
-    <hr/>
-    <a href="./tabelas.html">Ir para as tabelas</a>
-    <hr/>
-    <a href="./forms.html">Ir para formulário</a><br/>
-    <hr/>
-    <a href="./midia.html">Ir para midias</a>
-
+    <div class="container">
+        <h1>EBAC Banking</h1>
+        <h2>Depósitos</h2>
+        <form>
+            <input type="text" required placeholder="Nome completo do beneficiário" />
+            <input type="number" required placeholder="Número da conta" />
+            <input type="number" required placeholder="Valor" />
+            <textarea placeholder="Descrição (opcional)"></textarea>
+            <button type="submit">Depositar</button>
+        </form>
+    </div>
 </body>
 </html>
