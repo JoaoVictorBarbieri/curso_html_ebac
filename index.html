@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <header>
+        <h1>Galeria de fotos</h1>
+        <button type="button">Nova imagem +</button>
+    </header>
+    <form>
+        <h2>Inserir imagem</h2>
+        <input id="endereco-imagem-nova" type="url" required placeholder="URL da imagem">
+        <button type="submit">Adicionar</button>
+        <button id="botao-cancelar" type="reset">Cancelar</button>
+    </form>
+    <ul>
+        <li> <img src="./Imagens/foto1.jpg" alt="gatito">
+            <div class="overlay-imagem-link">
+                <a href="./Imagens/foto1.jpg" title="Ver imagem em tamanho Original" target="_blank">Ver imagem em tamanho Original</a>
+            </div>
+        </li>
+        <li> <img src="./Imagens/foto2.jpg" alt="Doflamingo">
+            <div class="overlay-imagem-link">
+                <a href="./Imagens/foto2.jpg" title="Ver imagem em tamanho Original" target="_blank">Ver imagem em tamanho Original</a>
+            </div>
+        </li>
+        <li> <img src="./Imagens/foto3.jpg" alt="cachorrito">
+            <div class="overlay-imagem-link">
+                <a href="./Imagens/foto4.jpg" title="Ver imagem em tamanho Original" target="_blank">Ver imagem em tamanho Original</a>
+            </div>
+        </li>
+    </ul>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
