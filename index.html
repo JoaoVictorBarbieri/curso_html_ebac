@@ -36,6 +36,7 @@
         <img src="./Imagens/slide2.png" alt="Carro da BMW">
         <img src="./Imagens/slide3.png" alt="Carro da Ford">
     </div>
+
     <section id="sobre-loja">
         <div class="container container-flex">
             <img src="./Imagens/loja.jpg" alt="Faixada da EBAC Motors">
@@ -46,6 +47,7 @@
             </div>
         </div>
     </section>
+
     <section>
         <div class="container">
             <h2>Em destaque</h2>
@@ -82,6 +84,7 @@
             </ul>
         </div>
     </section>
+
     <section>
         <div class="container">
             <h2>Em promoção</h2>
@@ -134,34 +137,36 @@
             </ul>
         </div>
     </section>
+
     <section>
         <div class="container">
             <h2>Entre em contato</h2>
             <form>
                 <div class="form-campo">
                     <label for="nome">Nome</label>
-                    <input id="nome" type="text">
+                    <input id="nome" type="text" name="nome">
                 </div>
                 <div class="form-campo">
                     <label for="telefone">Telefone</label>
-                    <input id="telefone" type="tel">
+                    <input id="telefone" type="tel" name="telefone">
                 </div>
                 <div class="form-campo">
                     <label for="email">E-mail</label>
-                    <input id="email" type="email">
+                    <input id="email" type="email" name="email">
                 </div>
                 <div class="form-campo">
                     <label for="veiculo-interesse">Veículo de interesse:</label>
-                    <input id="veiculo-interesse" type="text">
+                    <input id="veiculo-interesse" type="text" name="veiculoInteresse">
                 </div>
                 <div class="form-campo">
                     <label for="mensagem">Mensagem:</label>
-                    <textarea id="mensagem"></textarea>
+                    <textarea id="mensagem" name="mensagem"></textarea>
                 </div>
                 <button type="submit">Enviar</button>
             </form>
         </div>
     </section>
+
     <footer>
         <div class="container container-flex">
             <p>2022 &copy; EBAC Motors - Todos os direitos reservados</p>
@@ -175,7 +180,9 @@
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
+    <script src="./jQueryPlugins/jquery.mask.min.js"></script>
+    <script src="./jQueryPlugins/jquery.validate.min.js"></script>
+    <script src="./jQueryPlugins/messages_pt_BR.min.js"></script>
     <script>
         $(document).ready(function() {
             $('#carrossel-imagens').slick({autoplay: true});
@@ -183,6 +190,29 @@
 
         $('.menu-hamburguer').click(function() {
             $('nav').slideToggle();
+        })
+        
+        $('#telefone').mask('(00) 00000-0000');
+
+        $('form').validate({
+            rules: {
+                nome:{required: true},
+                email:{required: true, email: true},
+                telefone:{required: true},
+                mensagem:{required: true},
+                veiculoInteresse:{required:false},
+
+            }, messages : {
+                nome: 'Por favor insira o seu nome'
+            }, submitHandler: function(form) {
+                console.log(form)
+            },
+            invalidHandler: function(evento, validador) {
+                let camposIncorretos = validador.numberOfInvalids();
+                if (camposIncorretos) {
+                    alert (`Existem ${camposIncorretos} campos incorretos`)
+                }
+            }
         })
     </script>
 </body>
