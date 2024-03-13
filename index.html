@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="./main.css">
 </head>
 <body>
-    
     <section id="contato">
         <div class="container">
             <h2>Cadastro</h2>
@@ -18,28 +17,29 @@
                 </div>
                 <div class="form-campo">
                     <label for="email">E-mail:</label>
-                    <input type="text" name="email" id="email">
+                    <input  id="email" type="email" name="email">
                 </div>
                 <div class="form-campo">
                     <label for="telefone">Telefone:</label>
-                    <input type="text" name="telefone" id="telefone">
+                    <input id="telefone" type="tel" name="telefone">
                 </div>
                 <div class="form-campo">
                     <label for="cpf">CPF:</label>
-                    <input type="text" name="cpf" id="cpf">
+                    <input type="number" name="cpf" id="cpf">
                 </div>
                 <div class="form-campo">
                     <label for="endereco-completo">Endereço Completo:</label>
-                    <input type="text" name="endereco-completo" id="endereco-completo">
+                    <input type="text" name="enderecoCompleto" id="endereco-completo">
                 </div>
                 <div class="form-campo">
                     <label for="cep">CEP:</label>
-                    <input type="text" name="cep" id="cep">
+                    <input type="number" name="cep" id="cep">
                 </div>
                 <button type="submit">Enviar</button>
             </form>
         </div>
     </section>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="./jQuery Plugins/jquery.mask.min.js"></script>
     <script src="./jQuery Plugins/jquery.validate.min.js"></script>
     <script src="./jQuery Plugins/messages_pt_BR.min.js"></script>
