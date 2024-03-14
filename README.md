@@ -1,2 +1,2 @@
-# curso_html_ebac
- 
+# curso_ebac_frontend
+ Exercício Módulo 2
