@@ -1,2 +1,2 @@
-# curso_html_ebac
+# jquery-galeria-fotos
  
