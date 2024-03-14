@@ -143,7 +143,7 @@ aside .noticia{
     }
 }
 
-@media screen and (min-width: 768px), (max-width: 1023px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
     .container {
         max-width: 90%;
     }
