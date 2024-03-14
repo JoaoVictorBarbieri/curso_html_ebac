@@ -20,7 +20,7 @@ $('form').validate({
         telefone: 'Insira seu telefone',
         cpf: 'Insira seu CPF',
         cep: 'Insira seu CEP',
-    }, submitHandler: function(form) {
+    }, submitHandler: function() {
         alert('Cadastro concluido')
         nome.value = '';
         email.value = '';
