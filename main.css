@@ -64,7 +64,7 @@
         grid-template-columns: repeat(2, 40% 60%);
         column-gap: 1%;
         margin-top: 25px;
-        margin-bottom: 25px;
+        margin-bottom: 5%;
     }
     #sobre-a-loja img {
         box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.288);
@@ -172,8 +172,8 @@
     #sobre-a-loja{
         display: block;
         max-width: 95%;
-        margin-top: 25px;
-        margin-bottom: 25px;
+        margin-top: 5%;
+        margin-bottom: 5%;
     }
     #sobre-a-loja img {
         width: 100%;
@@ -203,31 +203,30 @@
         margin: auto;
     }
     .content-li img{
-        width: 80%;
+        width: 85%;
         box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.288);
     }
     #produtos ul {
         list-style: none;
         display: grid;
-        grid-template-columns: repeat(2, 45%);
-        column-gap: 18.8%;
-        margin: 20px auto;
+        grid-template-columns: repeat(2, 54%);
+        margin: 5% auto;
     }
     #produtos h3, p {
         margin-top: 5px;
         margin-bottom: 5px;
     }
     #produtos p {
-        max-width: 80%;
+        max-width: 85%;
     }
     #produtos button {
         background-color: var(--cor04);
         color: var(--cor00);
         font-weight: 500;
         padding: 5px;
-        width: 80%;
+        width: 85%;
         border-radius: 5px;
-        margin-bottom: 10px;
+        margin-bottom: 10%;
         
     }
     #produtos button:hover{
