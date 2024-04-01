@@ -17,103 +17,333 @@
     --fontePadrao: 'Roboto';
     --fonteDestaque: 'Josefin Sans';
 }
-main {
-    max-width: 1366px;
-    margin: auto;
-}
-header {
-    background-color: var(--cor02);
-    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.288);
-}
-.content-header {
-    max-width: 1366px;
-    margin: auto;
-}
-header h1 {
-    color: var(--cor00);
-    font-size: 3em;
-    font-family: var(--fonteDestaque), sans-serif;
-    font-weight: 700;
-    font-style: italic;
-    padding: 20px 10px 5px 20px;
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.205) ;
-}
-nav {
-    text-align: end;
-    padding-right: 10px;
-}
-nav a {
-    font-family: var(--fontePadrao);
-    font-weight: bold;
-    text-decoration: none;
-    color: var(--cor00);
-    font-size: 1.5em;
-    margin-left: 10px;
-    padding: 5px 5px 0px 5px;
-}
-nav a:hover{
-    background-color: var(--cor04);
-    transition-duration: 0.5s;
-    border-radius: 5px 5px 0px 0px;
-}
-#sobre-a-loja{
-    display: grid;
-    grid-template-columns: repeat(2, 40%);
-    column-gap: 2%;
-    margin-top: 25px;
-    margin-bottom: 25px;
-}
-h2 {
-    font-family: var(--fonteDestaque);
-    font-weight: bolder;
-    font-size: 1.5em;
-    color: var(--cor03);
-    font-style: italic;
-    border-bottom: 3px solid var(--cor04);
-    padding: 5px;
-    margin-bottom: 15px;
-}
-#sobre-a-loja p {
-    text-align: justify;
-    text-indent: 10px;
-}
 
-#produtos {
-    margin: auto;
+@media screen and (min-width: 1024px){
+    main {
+        max-width: 1366px;
+        margin: auto;
+    }
+    header {
+        background-color: var(--cor02);
+        box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.288);
+    }
+    .content-header {
+        max-width: 1366px;
+        margin: auto;
+    }
+    header h1 {
+        color: var(--cor00);
+        font-size: 3em;
+        font-family: var(--fonteDestaque), sans-serif;
+        font-weight: 700;
+        font-style: italic;
+        padding: 20px 10px 5px 20px;
+        text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.205) ;
+    }
+    nav {
+        text-align: end;
+        padding-right: 10px;
+    }
+    nav a {
+        font-family: var(--fontePadrao);
+        font-weight: bold;
+        text-decoration: none;
+        color: var(--cor00);
+        font-size: 1.5em;
+        margin-left: 10px;
+        padding: 5px 5px 0px 5px;
+    }
+    nav a:hover{
+        background-color: var(--cor04);
+        transition-duration: 0.5s;
+        border-radius: 5px 5px 0px 0px;
+    }
+    #sobre-a-loja{
+        display: grid;
+        grid-template-columns: repeat(2, 40%);
+        column-gap: 2%;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+    #sobre-a-loja img {
+        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.288);
+    }
+    h2 {
+        font-family: var(--fonteDestaque);
+        font-weight: bolder;
+        font-size: 1.5em;
+        color: var(--cor03);
+        font-style: italic;
+        border-bottom: 3px solid var(--cor04);
+        padding: 5px;
+        margin-bottom: 15px;
+    }
+    #sobre-a-loja p {
+        text-align: justify;
+        text-indent: 10px;
+    }
+    
+    #produtos {
+        margin: auto;
+    }
+    #produtos .content-li {
+        width: 200px;
+    }
+    .content-li img {
+        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.288);
+    }
+    #produtos ul {
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(4, 25%);
+        margin: 20px auto;
+    }
+    #produtos h3, p {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    #produtos button {
+        background-color: var(--cor04);
+        color: var(--cor00);
+        font-weight: 500;
+        padding: 5px;
+        width: 100%;
+        border-radius: 5px;
+    }
+    #produtos button:hover{
+        background-color: var(--cor01);
+        color: var(--cor04);
+    }
+    footer{
+        background-color: var(--cor04);
+        text-align: center;
+        padding: 10px;
+    }
+    footer p {
+        color: var(--cor00);
+        font-family: var(--fonteDestaque);
+        font-weight: bold;
+        font-style: italic;
+    }
 }
-#produtos .content-li {
-    width: 200px;
+@media screen and (max-width: 1023px) {
+    main {
+        max-width: 95%;
+        margin: auto auto auto 4%;
+        overflow-x: hidden;
+    }
+    header {
+        background-color: var(--cor02);
+        box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.288);
+    }
+    .content-header {
+        max-width: auto;
+        margin: auto;
+    }
+    header h1 {
+        color: var(--cor00);
+        font-size: 3em;
+        font-family: var(--fonteDestaque), sans-serif;
+        font-weight: 700;
+        font-style: italic;
+        padding: 20px 10px 5px 20px;
+        text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.205) ;
+    }
+    nav {
+        text-align: end;
+        padding-right: 10px;
+    }
+    nav a {
+        font-family: var(--fontePadrao);
+        font-weight: bold;
+        text-decoration: none;
+        color: var(--cor00);
+        font-size: 1.5em;
+        margin-left: 10px;
+        padding: 5px 5px 0px 5px;
+    }
+    nav a:hover{
+        background-color: var(--cor04);
+        transition-duration: 0.5s;
+        border-radius: 5px 5px 0px 0px;
+    }
+    #sobre-a-loja{
+        display: grid;
+        grid-template-columns: repeat(2, 40%);
+        column-gap: 15%;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+    #sobre-a-loja img {
+        width: 100%;
+        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.288);
+    }
+    h2 {
+        font-family: var(--fonteDestaque);
+        font-weight: bolder;
+        font-size: 1.5em;
+        color: var(--cor03);
+        font-style: italic;
+        border-bottom: 3px solid var(--cor04);
+        padding: 5px;
+        margin-bottom: 15px;
+    }
+    #sobre-a-loja p {
+        text-align: justify;
+        text-indent: 10px;
+    }
+    
+    #produtos {
+        margin: auto;
+    }
+    #produtos .content-li {
+        width: 100%;
+        margin: auto auto auto 10%;
+    }
+    .content-li img{
+        width: 60%;
+        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.288);
+    }
+    #produtos ul {
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        column-gap: 10%;
+        margin: 20px auto;
+    }
+    #produtos h3, p {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    #produtos p {
+        max-width: 60%;
+    }
+    #produtos button {
+        background-color: var(--cor04);
+        color: var(--cor00);
+        font-weight: 500;
+        padding: 5px;
+        width: 60%;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        
+    }
+    #produtos button:hover{
+        background-color: var(--cor01);
+        color: var(--cor04);
+    }
+    footer{
+        background-color: var(--cor04);
+        text-align: center;
+        padding: 10px;
+    }
+    footer p {
+        color: var(--cor00);
+        font-family: var(--fonteDestaque);
+        font-weight: bold;
+        font-style: italic;
+    }
 }
-#produtos ul {
-    list-style: none;
-    display: grid;
-    grid-template-columns: repeat(4, 25%);
-    margin: 20px auto;
-}
-#produtos h3, p {
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
-#produtos button {
-    background-color: var(--cor04);
-    color: var(--cor00);
-    font-weight: 500;
-    padding: 5px;
-    width: 100%;
-    border-radius: 5px;
-}
-#produtos button:hover{
-    background-color: var(--cor01);
-    color: var(--cor04);
-}
-footer{
-    background-color: var(--cor04);
-    text-align: center;
-    padding: 10px;
-}
-footer p {
-    color: var(--cor00);
-    font-family: var(--fonteDestaque);
-    font-weight: bold;
-    font-style: italic;
+@media screen and (max-width: 640px) {
+    main {
+        width: 90%;
+    }
+    header {
+        background-color: var(--cor02);
+        box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.288);
+        width: auto;
+    }
+
+    header h1 {
+        color: var(--cor00);
+        font-size: 3em;
+        font-family: var(--fonteDestaque), sans-serif;
+        font-weight: 700;
+        font-style: italic;
+        padding: 20px 10px 5px 20px;
+        text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.205) ;
+    }
+    nav {
+        text-align: end;
+        padding-right: 10px;
+    }
+    nav a {
+        font-family: var(--fontePadrao);
+        font-weight: bold;
+        text-decoration: none;
+        color: var(--cor00);
+        font-size: 1.5em;
+        margin-left: 10px;
+        padding: 5px 5px 0px 5px;
+    }
+    nav a:hover{
+        background-color: var(--cor04);
+        transition-duration: 0.5s;
+        border-radius: 5px 5px 0px 0px;
+    }
+    #sobre-a-loja{
+        display: block;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+    #sobre-a-loja img{
+        width: 100%;
+    }
+    h2 {
+        font-family: var(--fonteDestaque);
+        font-weight: bolder;
+        font-size: 1.5em;
+        color: var(--cor03);
+        font-style: italic;
+        border-bottom: 3px solid var(--cor04);
+        padding: 5px;
+        margin-bottom: 15px;
+    }
+    #sobre-a-loja p {
+        text-align: justify;
+        text-indent: 10px;
+    }
+    
+    #produtos .content-li {
+        width: 100%;
+        margin: auto;
+    }
+    #produtos ul {
+        list-style: none;
+        display: block;
+        margin: 20px auto;
+    }
+    .content-li img {
+        width: 100%;
+    }
+    #produtos h3, p {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    #produtos button {
+        background-color: var(--cor04);
+        color: var(--cor00);
+        font-weight: 500;
+        padding: 5px;
+        width: 100%;
+        border-radius: 5px;
+        margin-bottom: 10%;
+    }
+    #produtos button:hover{
+        background-color: var(--cor01);
+        color: var(--cor04);
+    }
+    footer{
+        background-color: var(--cor04);
+        text-align: center;
+        padding: 10px;
+        width: auto;
+    }
+    footer p {
+        color: var(--cor00);
+        font-family: var(--fonteDestaque);
+        font-weight: bold;
+        font-style: italic;
+        margin-bottom: 0px;
+    }
 }
