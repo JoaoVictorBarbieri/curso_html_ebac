@@ -95,8 +95,9 @@
     #produtos ul {
         list-style: none;
         display: grid;
-        grid-template-columns: repeat(4, 25%);
+        grid-template-columns: repeat(4, 15%);
         margin: 20px auto;
+        justify-content: space-around;
     }
     #produtos h3, p {
         margin-top: 5px;
@@ -207,9 +208,10 @@
     #produtos ul {
         list-style: none;
         display: grid;
-        grid-template-columns: repeat(2, 50%);
+        grid-template-columns: repeat(2, 45%);
         column-gap: 10%;
         margin: 20px auto;
+        justify-content: space-around;
     }
     #produtos h3, p {
         margin-top: 5px;
