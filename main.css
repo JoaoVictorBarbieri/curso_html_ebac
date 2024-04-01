@@ -28,6 +28,7 @@
         box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.288);
     }
     .content-header {
+        max-width: 90%;
         max-width: 1366px;
         margin: auto;
     }
@@ -60,8 +61,8 @@
     }
     #sobre-a-loja{
         display: grid;
-        grid-template-columns: repeat(2, 40%);
-        column-gap: 2%;
+        grid-template-columns: repeat(2, 40% 60%);
+        column-gap: 1%;
         margin-top: 25px;
         margin-bottom: 25px;
     }
@@ -96,8 +97,8 @@
         list-style: none;
         display: grid;
         grid-template-columns: repeat(4, 15%);
-        margin: 20px auto;
-        justify-content: space-around;
+        margin: 20px auto 2%;
+        justify-content: space-between;
     }
     #produtos h3, p {
         margin-top: 5px;
@@ -169,15 +170,15 @@
         border-radius: 5px 5px 0px 0px;
     }
     #sobre-a-loja{
-        display: grid;
-        grid-template-columns: repeat(2, 40%);
-        column-gap: 15%;
+        display: block;
+        max-width: 95%;
         margin-top: 25px;
         margin-bottom: 25px;
     }
     #sobre-a-loja img {
         width: 100%;
         box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.288);
+        margin-bottom: 5%;
     }
     h2 {
         font-family: var(--fonteDestaque);
@@ -192,40 +193,39 @@
     #sobre-a-loja p {
         text-align: justify;
         text-indent: 10px;
+        margin: 2% auto;
     }
     
     #produtos {
-        margin: auto;
+        max-width: 95%;
     }
     #produtos .content-li {
-        width: 100%;
-        margin: auto auto auto 10%;
+        margin: auto;
     }
     .content-li img{
-        width: 60%;
+        width: 80%;
         box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.288);
     }
     #produtos ul {
         list-style: none;
         display: grid;
         grid-template-columns: repeat(2, 45%);
-        column-gap: 10%;
+        column-gap: 18.8%;
         margin: 20px auto;
-        justify-content: space-around;
     }
     #produtos h3, p {
         margin-top: 5px;
         margin-bottom: 5px;
     }
     #produtos p {
-        max-width: 60%;
+        max-width: 80%;
     }
     #produtos button {
         background-color: var(--cor04);
         color: var(--cor00);
         font-weight: 500;
         padding: 5px;
-        width: 60%;
+        width: 80%;
         border-radius: 5px;
         margin-bottom: 10px;
         
@@ -248,7 +248,7 @@
 }
 @media screen and (max-width: 640px) {
     main {
-        width: 90%;
+        width: 95%;
     }
     header {
         background-color: var(--cor02);
