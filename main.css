@@ -3,6 +3,8 @@
 *{
     padding: 0px;
     margin: 0px;
+    font-family: var(--fontePadrao);
+    font-size: 1em;
 }
 
 :root {
@@ -11,6 +13,9 @@
     --cor02: #236A62;
     --cor03: #0D4F48;
     --cor04: #00352F;
+    
+    --fontePadrao: 'Roboto';
+    --fonteDestaque: 'Josefin Sans';
 }
 main {
     max-width: 1366px;
@@ -18,36 +23,97 @@ main {
 }
 header {
     background-color: var(--cor02);
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.288);
+}
+.content-header {
+    max-width: 1366px;
+    margin: auto;
 }
 header h1 {
     color: var(--cor00);
     font-size: 3em;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: var(--fonteDestaque), sans-serif;
     font-weight: 700;
     font-style: italic;
     padding: 20px 10px 5px 20px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.205) ;
 }
 nav {
     text-align: end;
     padding-right: 10px;
-    padding-bottom: 10px;
 }
 nav a {
-    font-family: 'Roboto';
+    font-family: var(--fontePadrao);
     font-weight: bold;
     text-decoration: none;
     color: var(--cor00);
     font-size: 1.5em;
+    margin-left: 10px;
+    padding: 5px 5px 0px 5px;
+}
+nav a:hover{
+    background-color: var(--cor04);
+    transition-duration: 0.5s;
+    border-radius: 5px 5px 0px 0px;
 }
 #sobre-a-loja{
     display: grid;
-    grid-template-columns: repeat(2, 49%);
-    column-gap: 2%
+    grid-template-columns: repeat(2, 40%);
+    column-gap: 2%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+h2 {
+    font-family: var(--fonteDestaque);
+    font-weight: bolder;
+    font-size: 1.5em;
+    color: var(--cor03);
+    font-style: italic;
+    border-bottom: 3px solid var(--cor04);
+    padding: 5px;
+    margin-bottom: 15px;
+}
+#sobre-a-loja p {
+    text-align: justify;
+    text-indent: 10px;
 }
 
+#produtos {
+    margin: auto;
+}
+#produtos .content-li {
+    width: 200px;
+}
 #produtos ul {
     list-style: none;
     display: grid;
-    grid-template-columns: repeat(4, 15%);
-    column-gap: 1%;
+    grid-template-columns: repeat(4, 25%);
+    margin: 20px auto;
+}
+#produtos h3, p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+#produtos button {
+    background-color: var(--cor04);
+    color: var(--cor00);
+    font-weight: 500;
+    padding: 5px;
+    width: 100%;
+    border-radius: 5px;
+}
+#produtos button:hover{
+    background-color: var(--cor01);
+    color: var(--cor04);
+}
+footer{
+    background-color: var(--cor04);
+    text-align: center;
+    padding: 10px;
+}
+footer p {
+    color: var(--cor00);
+    font-family: var(--fonteDestaque);
+    font-weight: bold;
+    font-style: italic;
 }
