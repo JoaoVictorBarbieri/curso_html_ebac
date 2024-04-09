@@ -1,6 +1,8 @@
 @use 'config/reset';
 @use 'config/cores';
 @use 'secoes/produtos';
+@use 'config/breakpoints';
+
 body {
     background-color: cores.$cor-de-fundo;
 }
@@ -45,4 +47,25 @@ header .container {
 
 section {
     padding: 56px 0;
+}
+
+@media screen and (max-width: 1023px) {
+    .container {
+        max-width: 80%;
+    }
+
+    .products {
+        grid-template-columns: repeat(2, 48.5%);
+        column-gap: 3%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .products {
+        display: block;
+    }
+
+    .product-item  {
+        margin-bottom: 32px;
+    }
 }

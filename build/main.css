@@ -34,23 +34,6 @@
   background-color: #4cd137;
 }
 
-@media screen and (max-width: 1023px) {
-  .container {
-    max-width: 80%;
-  }
-  .products {
-    grid-template-columns: repeat(2, 48.5%);
-    column-gap: 3%;
-  }
-}
-@media screen and (max-width: 767px) {
-  .products {
-    display: block;
-  }
-  .product-item {
-    margin-bottom: 32px;
-  }
-}
 body {
   background-color: #f5f6fa;
 }
@@ -95,6 +78,24 @@ header .container {
 
 section {
   padding: 56px 0;
+}
+
+@media screen and (max-width: 1023px) {
+  .container {
+    max-width: 80%;
+  }
+  .products {
+    grid-template-columns: repeat(2, 48.5%);
+    column-gap: 3%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .products {
+    display: block;
+  }
+  .product-item {
+    margin-bottom: 32px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
