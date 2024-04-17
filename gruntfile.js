@@ -20,6 +20,10 @@ module.exports = function(grunt){
             less: {
                 files: ['source/styles/**/*.less'],
                 tasks: ['less:development']
+            },
+            html:{
+                files: ['source/styles/index.html'],
+                tasks: ['replace:dev']
             }
         },
         replace: {
@@ -29,6 +33,10 @@ module.exports = function(grunt){
                         {
                             match: 'ENDERECO_DO_CSS',
                             replacement: './styles/main.css'
+                        },
+                        {
+                            match: 'ENDERECO_DO_JavaScript',
+                            replacement: '../source/scripts/main.js'
                         }
                     ]
                 },
@@ -70,14 +78,16 @@ module.exports = function(grunt){
                     'prebuild/index.html':'source/index.html'
                 }
             }
-        }
+        },
+        clean: ['prebuild']
     })
 
     grunt.loadNpmTasks('grunt-contrib-less');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-replace');
     grunt.loadNpmTasks('grunt-contrib-htmlmin');
+    grunt.loadNpmTasks('grunt-contrib-clean');
 
     grunt.registerTask('default', ['watch']);
-    grunt.registerTask('build', ['less:production', 'htmlmin:dist', 'replace:dist']);
+    grunt.registerTask('build', ['less:production', 'htmlmin:dist', 'replace:dist', 'clean']);
 }
