@@ -12,4 +12,7 @@ function filtraAlunosAprovados(aluno){
     return aluno.nota >= 6;
 }
 const alunosAprovados = todosAlunos.filter(filtraAlunosAprovados);
-console.log(alunosAprovados);
+const aprovados = alunosAprovados.map(function(aluno) {
+    return aluno.nome;
+})
+console.log(aprovados);
