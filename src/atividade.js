@@ -5,11 +5,11 @@ const fred = new Aluno ("Fred", 4);
 function Aluno (nome, nota) {
     this.nome = nome;
     this.nota = nota;
-
-    if (nota <= 6) {
-        return Aluno
-    }
 }
+const todosAlunos = [joao, ana, fred];
 
-const todosAlunos = [joao.nome, ana.nome, fred.nome];
-console.log(todosAlunos);
+function filtraAlunosAprovados(aluno){
+    return aluno.nota >= 6;
+}
+const alunosAprovados = todosAlunos.filter(filtraAlunosAprovados);
+console.log(alunosAprovados);
