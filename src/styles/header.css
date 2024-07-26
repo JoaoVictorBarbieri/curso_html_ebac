@@ -71,8 +71,14 @@ header {
         margin: 12px 0px;
     }
 
-    #mobile_nav_list .nav_item {
+    #mobile_nav_list .mobile_nav_item {
         list-style: none;
         text-align: center;
+    }
+
+    .mobile_nav_item a {
+        text-decoration: none;
+        color: #1d1d1dad;
+        font-weight: 600;
     }
 }
