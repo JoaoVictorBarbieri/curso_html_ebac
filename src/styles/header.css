@@ -7,6 +7,9 @@ header {
     z-index: 3;
 }
 
+#hero_img {
+    max-width: 60%;
+}
 #navbar {
     width: 100%;
     display: flex;
