@@ -1,33 +1,44 @@
-describe('Agenda de Contatos', () => {
-  const url = 'https://agenda-contatos-react.vercel.app/';
-
+describe('Testes da Agenda de Contatos', () => {
   beforeEach(() => {
-    cy.visit(url);
+    cy.visit('https://agenda-contatos-react.vercel.app/');
   });
 
-  it('deve incluir um novo contato', () => {
-    cy.get('input[placeholder="Digite o nome"]').type('João Victor');
-    cy.get('input[placeholder="Digite o email"]').type('joao@email.com');
-    cy.get('input[placeholder="Digite o telefone"]').type('11999999999');
-    cy.contains(/salvar/i).click();
-    cy.contains('João Victor').should('exist');
+  it('Deve adicionar um novo contato', () => {
+    cy.get('input[placeholder="Nome"]').type('PEDRINHO');
+    cy.get('input[placeholder="E-mail"]').type('pedrinho@email.com');
+    cy.get('input[placeholder="Telefone"]').type('123456789');
+    cy.get('button').contains('Adicionar').click();
+
+    cy.contains('PEDRINHO').should('exist');
+    cy.contains('pedrinho@email.com').should('exist');
+    cy.contains('123456789').should('exist');
   });
 
-  it('deve alterar um contato existente', () => {
-    cy.contains('João Victor').closest('tr').within(() => {
-      cy.contains('Editar').click();
+  it('Deve editar um contato', () => {
+    // Aguardar o contato "PEDRINHO" ser adicionado antes de editar
+    cy.contains('PEDRINHO').parents('.contato').within(() => {
+      cy.get('.edit').click(); // Clica no botão de editar
     });
 
-    cy.get('input[placeholder="Digite o nome"]').clear().type('João Atualizado');
-    cy.contains(/salvar/i).click();
-    cy.contains('João Atualizado').should('exist');
+    // Editando as informações do contato
+    cy.get('input[placeholder="Nome"]').clear().type('USUARIO EDITADO');
+    cy.get('input[placeholder="E-mail"]').clear().type('editado@email.com');
+    cy.get('input[placeholder="Telefone"]').clear().type('123456789');
+    cy.get('button').contains('Salvar').click();
+
+    // Verificando se o contato foi editado com sucesso
+    cy.contains('USUARIO EDITADO').should('exist');
+    cy.contains('editado@email.com').should('exist');
+    cy.contains('123456789').should('exist');
   });
 
-  it('deve remover um contato', () => {
-    cy.contains('João Atualizado').closest('tr').within(() => {
-      cy.contains('Remover').click();
+  it('Deve remover um contato', () => {
+    // Aguardar o contato "USUARIO EDITADO" ser adicionado antes de excluir
+    cy.contains('USUARIO EDITADO').parents('.contato').within(() => {
+      cy.get('.delete').click(); // Clica no botão de deletar
     });
 
-    cy.contains('João Atualizado').should('not.exist');
+    // Verificando se o contato foi removido com sucesso
+    cy.contains('USUARIO EDITADO').should('not.exist');
   });
 });
